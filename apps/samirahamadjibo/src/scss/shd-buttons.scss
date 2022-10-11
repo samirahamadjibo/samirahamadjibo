@@ -1,0 +1,60 @@
+
+// // btns
+
+.theme-btn {
+  @extend .btn;
+  border-radius: 8px;
+  font-size: 0.8 * $font-size-base
+}
+
+.theme-btn-primary{
+  @extend .theme-btn;
+  @extend .btn-primary;
+}
+
+.theme-btn-secondary{
+  @extend .theme-btn;
+  @extend .btn-secondary
+}
+
+.theme-btn-outline-dark{
+  @extend .theme-btn;
+  @extend .btn-outline-dark;
+}
+
+.theme-btn-outline-purple{
+  @extend .theme-btn;
+  @extend .btn-outline-dark;
+  color: $theme-purple;
+  border-color: $theme-purple;
+
+  &:hover{
+    background-color: $theme-purple !important
+  }
+}
+
+.theme-btn-outline-light{
+  @extend .theme-btn;
+  @extend .btn-outline-light;
+}
+
+.theme-btn-link{
+  @extend .theme-btn;
+  @extend .btn-link;
+  text-decoration: none;
+  color: black;
+  font-size: $font-size-base;
+
+  &:hover{
+    color: tint-color(black, 50%) !important;
+  }  
+}
+
+.theme-btn-link-light{
+  @extend .theme-btn-link;
+  color: white;
+
+  &:hover{
+    color: shade-color(white, 40%) !important;
+  }  
+}

@@ -1,0 +1,52 @@
+.font-headings{
+  font-family: $font-family-headings;
+}
+
+.fs-lg{
+  font-size: 1.4 * $font-size-base;
+}
+.fs-xs{
+  font-size: 0.6 * $font-size-base;
+}
+.fs-xl{
+  font-size: 1.6 * $font-size-base;
+  @media(max-width: map-get($map: $grid-breakpoints, $key: sm)){font-size: 1.2 * $font-size-base;};
+}
+.fs-xxl{
+  font-size: 2.7 * $font-size-base;
+}
+
+.bg-color-linear-primary{
+  background: linear-gradient(0.25turn, $theme-purple, #A597C4);
+}
+.bg-color-linear-purple-blue{
+  background: linear-gradient(0.25turn, $theme-purple, $theme-blue);
+}
+.bg-color-primary{
+  background-color: $theme-blue;
+}
+.color-black{
+  color: black;
+}
+.color-blue{
+  color: $theme-blue;
+}
+.color-tinted-blue{
+  color: $theme-tinted-blue;
+}
+.color-purple{
+  color: $theme-purple;
+}
+.color-white{
+  color: white;
+}
+.fs-base{
+  font-size: $font-size-base;
+}
+.fw-bold{
+  font-weight: 600 !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}

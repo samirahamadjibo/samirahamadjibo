@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://use.typekit.net/xki3oba.css");
+
+
+$theme-blue: #0C5583;
+$theme-tinted-blue: #097CC6;
+$theme-purple: #80709D;
+$theme-gray: #1d1d1d;
+$theme-clay: #EFEFEF;
+
+$primary: $theme-blue;
+$secondary: $theme-purple;
+
+// Body
+$body-bg: $theme-gray;
+$body-color: $theme-gray;
+
+
+
+// Typography
+$font-family-sans-serif: 'Quicksand',
+system-ui,
+-apple-system,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+"Liberation Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+$font-family-headings: 'bely-display',
+'Didot',
+'Quicksand',
+system-ui,
+-apple-system,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+"Liberation Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+$font-family-subheadings: 'Quicksand',
+system-ui,
+-apple-system,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+"Liberation Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+
+$font-size-base: 1rem !default;
+$font-size-sm: $font-size-base * .875 !default;
+$font-weight-light: 100;
+$font-weight-normal: 200;
+$font-weight-bold: 400;
+
+
+$headings-font-family: $font-family-headings;
+$headings-font-weight: $font-weight-bold;
+
+
+$h1-font-size: $font-size-base * 5;
+$h2-font-size: $font-size-base * 2.5;
+
+
+
+// Buttons + Forms
+$input-btn-font-family: $font-family-sans-serif;
+$border-width: 1px;
+$border-radius: .25rem !default;
+$input-btn-focus-box-shadow: null;
+$input-btn-focus-color: rgba(255, 255, 255, 0.247);
+$input-btn-padding-y: .375rem;
+$input-btn-padding-x: 1rem;
+
+
+$input-btn-padding-y-sm: .25rem !default;
+$input-btn-padding-x-sm: .5rem !default;
+$input-border-color: rgba(255, 255, 255, 0.445);
+
+
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss"

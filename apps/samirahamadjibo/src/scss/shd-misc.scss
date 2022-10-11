@@ -1,0 +1,149 @@
+.display-md-none{
+  display: block !important;
+  @media(max-width: map-get($map: $grid-breakpoints, $key: md)){display: none !important};
+}
+
+.scrolling-text-container{
+  display: flex;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.scrolling-text{
+  white-space: nowrap;
+  animation: scrolling-text 7s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scrolling-text.small{
+  animation: scrolling-text 14s linear infinite;
+  font-size: 1.1rem;
+  color: white;
+}
+.scrolling-text-container.competences{
+  width: 100%;
+  @media(max-width: map-get($map: $grid-breakpoints, $key: md)){width: 80%;};
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+@keyframes scrolling-text {
+  0%{
+    transform: translate(0, 0);
+  }
+  100%{
+    transform: translate(-100%,0);
+  }
+}
+
+.pastille{
+  display: inline-block;
+  border-radius: 50px;
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  margin: 0px 35px;
+}
+
+.pastille.light{
+  background-color: white;
+}
+
+
+.pastille-mini {
+  @extend .pastille;
+  width: 6px;
+  height: 6px;
+  margin: 0px 14px;
+}
+
+.carded{
+  border-radius: 10px;
+  padding: 40px 50px;
+  background-color: white;
+  color: black;
+  @extend .shadow-lg
+}
+
+.carded.personal-project{
+  padding: 30px 40px;
+}
+.carded.home{
+  width: 100%;
+  @media(min-width: map-get($map: $grid-breakpoints, $key: sm)){width: 75%;};
+  @media(max-width: map-get($map: $grid-breakpoints, $key: md)){font-size: 0.8 * $font-size-base};
+  @media(max-width: map-get($map: $grid-breakpoints, $key: md)){padding: 20px 20px;};
+}
+.carded.projects{
+  padding: 70px 44px;
+  margin: 0 50px
+}
+.carded.competences{
+  height: 350px;
+  position: relative;
+  top: 175px;
+  color: white !important;
+}
+
+.carded.experiences{
+  padding: 70px 44px;
+  background-color: tint-color($theme-gray, 7%) !important;
+  color: white;
+}
+
+.carded.contact {
+  padding: 20px 30px;
+}
+.carded.regular{
+  max-width: 300px;
+}
+.carded.big{
+  max-width: 475px;
+}
+.profile-img{
+  width: 500px;
+  z-index: 2;
+}
+.width-max{
+  width: 100%;
+}
+.height-max{
+  height: 100%;
+}
+
+
+
+
+.home-section{
+  background-color: #EFEFEF;
+  color: black;
+}
+
+.home-row{
+  height: 65vh;
+}
+
+.nav-row{
+  height: 15vh;
+}
+
+.contact-row{
+  background-color: $theme-gray;
+  color: white;
+  height: 20vh;
+  border: none;
+}
+
+.page-section{
+  background-color: $theme-gray;
+  color:white;
+  z-index: 2;
+  border: none;
+}
+
+.footer{
+  background-color: $theme-clay;
+  color: black;
+  padding-top: 200px;
+}
