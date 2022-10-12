@@ -30,10 +30,10 @@
 
 @keyframes scrolling-text {
   0%{
-    transform: translate(0, 0);
+    transform: translate(-100%, 0);
   }
   100%{
-    transform: translate(-100%,0);
+    transform: translate(0,0);
   }
 }
 
@@ -61,38 +61,45 @@
 .carded{
   border-radius: 10px;
   padding: 40px 50px;
-  background-color: white;
-  color: black;
-  @extend .shadow-lg
+  background-color: $shd-gray;
+  color: $shd-shaded-white;
+  @extend .shadow-lg;
 }
 
-.carded.personal-project{
-  padding: 30px 40px;
+.carded.values{
+  @extend .carded;
+  padding: 50px 40px;
+  position: relative;
+  bottom: 20vh;
 }
+
 .carded.home{
+  @extend .carded;
   width: 100%;
   @media(min-width: map-get($map: $grid-breakpoints, $key: sm)){width: 75%;};
   @media(max-width: map-get($map: $grid-breakpoints, $key: md)){font-size: 0.8 * $font-size-base};
   @media(max-width: map-get($map: $grid-breakpoints, $key: md)){padding: 20px 20px;};
+  padding: 20px 30px;
 }
 .carded.projects{
+  @extend .carded;
   padding: 70px 44px;
   margin: 0 50px
 }
 .carded.competences{
+  @extend .carded;
   height: 350px;
   position: relative;
   top: 175px;
-  color: white !important;
 }
 
 .carded.experiences{
-  padding: 70px 44px;
-  background-color: tint-color($theme-gray, 7%) !important;
-  color: white;
+  @extend .carded;
+  padding: 50px 44px;
 }
 
 .carded.contact {
+  @extend .carded;
   padding: 20px 30px;
 }
 .carded.regular{
@@ -112,38 +119,84 @@
   height: 100%;
 }
 
-
-
-
 .home-section{
-  background-color: #EFEFEF;
+  background-color: white;
   color: black;
 }
 
 .home-row{
-  height: 65vh;
+  height: 60vh;
 }
 
 .nav-row{
   height: 15vh;
-}
-
-.contact-row{
-  background-color: $theme-gray;
-  color: white;
-  height: 20vh;
-  border: none;
+  @media(max-width: map-get($map: $grid-breakpoints, $key: sm)){height: 10vh;};
 }
 
 .page-section{
-  background-color: $theme-gray;
-  color:white;
+  background-color: $shd-clay;
+  color:black;
   z-index: 2;
   border: none;
 }
 
 .footer{
-  background-color: $theme-clay;
+  background-color: white;
   color: black;
   padding-top: 200px;
 }
+
+.divider-sm{
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.scrolling-text-row{
+  height: 15vh;
+  @media(max-width: map-get($map: $grid-breakpoints, $key: sm)){height: 20vh;};
+}
+
+.scrolling-text-container{
+  display: flex;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.scrolling-text{
+  white-space: nowrap;
+  animation: scrolling-text 7s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-headings;
+  font-size: 25px;
+}
+
+.pastille{
+  display: inline-block;
+  border-radius: 50px;
+  background-color: $shd-orange;
+  width: 10px;
+  height: 10px;
+  margin: 0 50px;
+}
+.scribble{
+  height: 30vh;
+  background-color: $shd-clay;
+  background-image: url("../assets/images/scribble.png");
+}
+.icon-small{
+  width: 40px;
+  height: 40px;
+}
+.icon-xs{
+  width: 30px;
+  height: 30px;
+}
+
+.icon-padding{
+  padding-left: 50px;
+}
+
+ 

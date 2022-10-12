@@ -1,45 +1,35 @@
 
 // // btns
 
-.theme-btn {
+.shd-btn {
   @extend .btn;
   border-radius: 8px;
-  font-size: 0.8 * $font-size-base
+  font-size: 0.8 * $font-size-base;
+  font-family: $font-family-sans-serif;
 }
 
-.theme-btn-primary{
-  @extend .theme-btn;
+.shd-btn-primary{
+  @extend .shd-btn;
   @extend .btn-primary;
 }
 
-.theme-btn-secondary{
-  @extend .theme-btn;
+.shd-btn-secondary{
+  @extend .shd-btn;
   @extend .btn-secondary
 }
 
-.theme-btn-outline-dark{
-  @extend .theme-btn;
+.shd-btn-outline-dark{
+  @extend .shd-btn;
   @extend .btn-outline-dark;
 }
 
-.theme-btn-outline-purple{
-  @extend .theme-btn;
-  @extend .btn-outline-dark;
-  color: $theme-purple;
-  border-color: $theme-purple;
-
-  &:hover{
-    background-color: $theme-purple !important
-  }
-}
-
-.theme-btn-outline-light{
-  @extend .theme-btn;
+.shd-btn-outline-light{
+  @extend .shd-btn;
   @extend .btn-outline-light;
 }
 
-.theme-btn-link{
-  @extend .theme-btn;
+.shd-btn-link{
+  @extend .shd-btn;
   @extend .btn-link;
   text-decoration: none;
   color: black;
@@ -50,8 +40,8 @@
   }  
 }
 
-.theme-btn-link-light{
-  @extend .theme-btn-link;
+.shd-btn-link-light{
+  @extend .shd-btn-link;
   color: white;
 
   &:hover{

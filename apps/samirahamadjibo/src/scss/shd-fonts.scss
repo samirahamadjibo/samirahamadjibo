@@ -1,6 +1,10 @@
-.font-headings{
-  font-family: $font-family-headings;
+.ff-headings{
+  font-family: $font-family-headings !important;
 }
+.ff-base{
+  font-family: $font-family-sans-serif !important;
+}
+
 
 .fs-lg{
   font-size: 1.4 * $font-size-base;
@@ -16,26 +20,18 @@
   font-size: 2.7 * $font-size-base;
 }
 
-.bg-color-linear-primary{
-  background: linear-gradient(0.25turn, $theme-purple, #A597C4);
-}
-.bg-color-linear-purple-blue{
-  background: linear-gradient(0.25turn, $theme-purple, $theme-blue);
-}
 .bg-color-primary{
-  background-color: $theme-blue;
+  background-color: $primary;
 }
 .color-black{
   color: black;
 }
-.color-blue{
-  color: $theme-blue;
+
+.color-primary{
+  color: $primary;
 }
-.color-tinted-blue{
-  color: $theme-tinted-blue;
-}
-.color-purple{
-  color: $theme-purple;
+.color-secondary{
+  color: $secondary;
 }
 .color-white{
   color: white;
@@ -44,7 +40,10 @@
   font-size: $font-size-base;
 }
 .fw-bold{
-  font-weight: 600 !important;
+  font-weight: $font-weight-bold;
+}
+.fw-sbold{
+  font-weight: 400 !important;
 }
 
 html{
